@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Can you guess the correct number ?</h1>
+    
+    <div class="container">
+
+       <div class="level">
+        <h3>Select the difficulty level</h3>
+
+        <div class="diff">
+            <select name="level" id="level">
+                <option value="defauld" disabled selected>Select level</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <div class="desc">
+            <span id="level-desc">
+
+            </span>
+            <span id="chance">
+
+            </span>
+        </div>
+
+       </div> 
+
+        <input type="text" placeholder="Enter your number" id="number">
+
+        <input type="button" value="Check" id="check">
+
+        <div id="result"></div>
+    </div>
+
+    <script src=".\guessNum.js"></script>
+</body>
+</html>
